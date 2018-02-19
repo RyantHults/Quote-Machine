@@ -6,10 +6,10 @@
         <meta charset="utf-8">
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
         <meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
         <meta name="author" content="Ryan Hults">
         <link rel="author" href="https://ryanthults.github.io" alt="https://plus.google.com/u/2/108203311083664618233">
@@ -118,25 +118,23 @@
     <body>
         <div class="container-fluid">
             <div class = "row">
-                <div class = "col-md-6 col-lg-4 col-md-offset-3 col-lg-offset-4 text-center" id = "app">
+                <div class = "col-md-6 col-lg-4 offset-md-3 offset-lg-4 text-center" id = "app">
                     <h1>Yet Another Quote Machine</h1>
                     <h3 class="quoteSpot"><i class="fas fa-quote-right"></i></h3>
-                    <div class="row">
-                        <div class="quoteAuthor text-right"></div>
+                    <div class="col-sm align-self-end text-right">
+                        <div class="quoteAuthor"></div>
                     </div>
-                    <div class="row">
-                        <div class = "col-lg-4">
+                    <div class="row align-items-center">
+                        <div class = "col">
                             <a href = "#" target="__blank" title="Tweet this quote!" id="twitter-btn"><i class="fab fa-twitter-square"></i></a>
                         </div>
-                        <div class= "col-lg-4 col-lg-offset-4">
+                        <div class= "col offset-sm-4">
                             <button type="button" class="btn btn-primary" id ="new-quote-btn">New Quote</button>
                         </div>
                     </div>
                 </div> 
-                <div class="row">
-                    <div class = "col-md-6 col-lg-4 col-md-offset-3 col-lg-offset-4 text-center" id="attribution">
-                        <div class = "row text-center">by <a href="http://ryanthults.com" target="__blank" style="color:white;">Ryan Hults</a></div>
-                    </div>
+                <div class="col-12 align-self-center text-center">
+                    <p style="color:white">by <a href="http://ryanthults.com" target="__blank" style="color:white;">Ryan Hults</a><p/>
                 </div>
             </div>
         </div>
